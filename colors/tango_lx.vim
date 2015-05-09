@@ -46,12 +46,13 @@ hi PMenu        guifg=#2e3436 guibg=#ad7fa8
 
 hi Comment		guifg=#bbddff               ctermfg=blue cterm=bold
 hi Constant		guifg=#fcaf3e               ctermfg=3     ctermfg=DarkYellow
+hi Special      guifg=#fcaf3e
 hi Identifier   guifg=#7acccc
 hi Statement    guifg=#fce94f               gui=bold cterm=bold
 hi PreProc		guifg=#eeeeec cterm=bold
-hi Type			guifg=#8ae234               gui=bold cterm=bold
 hi Function		guifg=#eeeeec               gui=bold cterm=bold
-hi Special      guifg=#fcaf3e
+hi Type			guifg=#8ae234               gui=bold cterm=bold
+hi Keyword		guifg=#8ae234               gui=bold cterm=bold
 "hi Underlined	
 "hi Ignore		
 hi Include		guifg=#eeeeec  " #include
