@@ -22,6 +22,7 @@ hi StatusLine   guifg=#3465a4 guibg=#d3d7cf
 hi Title        guifg=#ad7fa8               gui=bold
 hi Visual       guifg=#404040               gui=bold
 hi WildMenu     guifg=#2e3436 guibg=#fce94f
+hi Conceal 		guifg=#77ddff guibg=#2e3436
 "hi CursorIM	
 "hi DiffAdd		
 "hi DiffChange	
