@@ -43,7 +43,7 @@ hi Conceal 		guifg=#77ddff guibg=#2e3436
 hi Error		              guibg=#F92672
 hi Todo			              guibg=#66D9EF
 hi PMenu        guifg=#2e3436 guibg=#ad7fa8
-" hi ColorColumn                guibg=#a40000
+hi ColorColumn                guibg=#888888	ctermbg=white
 
 hi Comment		guifg=#bbddff               ctermfg=blue cterm=bold
 hi Constant		guifg=#fcaf3e               ctermfg=3     ctermfg=DarkYellow
