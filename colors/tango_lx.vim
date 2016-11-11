@@ -14,7 +14,7 @@ hi FoldColumn	guifg=#fce94f guibg=#2e3436 ctermfg=3     ctermbg=none
 hi Folded		guifg=#eeeeec guibg=#555753 ctermfg=black ctermbg=gray
 hi LineNr       guifg=#fce94f
 hi NonText      guifg=#3465a4
-hi Normal		guifg=#f3f3ff guibg=#2e3436 ctermfg=none  ctermbg=darkgray
+hi Normal		guifg=#f3f3ff guibg=#2e3436 ctermfg=none  ctermbg=none
 hi Search       guifg=#2e3436 guibg=#cc0000 gui=bold ctermfg=black ctermbg=red   cterm=none
 hi SignColumn	              guibg=#2e3436               ctermbg=none
 hi SpecialKey   guifg=#7acccc
@@ -60,4 +60,3 @@ hi Include		guifg=#eeeeec  " #include
 hi Define		guifg=#eeeeec  " #define
 hi Macro		guifg=#eeeeec  " same as Define
 hi PreCondit	guifg=#eeeeec gui=bold " #if, #else, #endif, section(tex)
-
