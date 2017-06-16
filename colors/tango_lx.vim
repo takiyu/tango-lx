@@ -50,7 +50,7 @@ hi Constant		guifg=#fcaf3e               ctermfg=3     ctermfg=DarkYellow
 hi Special      guifg=#fcaf3e
 hi Identifier   guifg=#7acccc
 hi Statement    guifg=#fce94f               gui=bold cterm=bold
-hi PreProc		guifg=#eeeeec cterm=bold
+hi PreProc		guifg=#88ffff ctermfg=cyan  gui=bold cterm=bold
 hi Function		guifg=#eeeeec               gui=bold cterm=bold
 hi Type			guifg=#8ae234               gui=bold cterm=bold
 hi Keyword		guifg=#8ae234               gui=bold cterm=bold
