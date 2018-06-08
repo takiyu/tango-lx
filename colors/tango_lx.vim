@@ -63,3 +63,8 @@ hi ExtraWhitespace             guibg=#bb0000                       ctermbg=red
 "hi Menu
 "hi Scrollbar
 "hi Tooltip
+
+hi GitGutterAdd          guifg=#8ae234 gui=bold ctermfg=green cterm=bold
+hi GitGutterChange       guifg=#8ae234 gui=bold ctermfg=green cterm=bold
+hi GitGutterDelete       guifg=#f92672 gui=bold ctermfg=red   cterm=bold
+hi GitGutterChangeDelete guifg=#8ae234 gui=bold ctermfg=green cterm=bold
