@@ -26,7 +26,7 @@ hi Conceal 		guifg=#77ddff guibg=#2e3436
 
 hi Error		              guibg=#F92672
 hi Todo			              guibg=#66D9EF
-hi PMenu        guifg=#2e3436 guibg=#ad7fa8
+hi PMenu        guifg=#2e3436 guibg=#bbccdd          ctermfg=white ctermbg=blue
 hi ColorColumn                guibg=#888888	                       ctermbg=white
 
 hi Comment		guifg=#bbddff                        ctermfg=blue                cterm=bold
