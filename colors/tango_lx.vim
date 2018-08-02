@@ -7,6 +7,7 @@ endif
 let g:colors_name = "tango_lx"
 
 hi Cursor       guifg=#2e3436 guibg=#ffffff gui=bold ctermfg=black ctermbg=white cterm=bold
+hi CursorLine	              guibg=#343f3f                        ctermbg=none
 hi CursorLineNr guifg=#fce94f
 hi Directory    guifg=#7acccc
 hi ErrorMsg                   guibg=#a40000
