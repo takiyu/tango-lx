@@ -21,7 +21,7 @@ hi SignColumn      guifg=NONE    guibg=#2e3436 gui=NONE    ctermfg=NONE       ct
 hi SpecialKey      guifg=#7acccc guibg=NONE    gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi StatusLine      guifg=#3465a4 guibg=#d3d7cf gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Title           guifg=#ad7fa8 guibg=NONE    gui=bold    ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Visual          guifg=#404040 guibg=NONE    gui=bold    ctermfg=NONE       ctermbg=NONE  cterm=NONE
+hi Visual          guifg=NONE    guibg=NONE    gui=reverse ctermfg=NONE       ctermbg=0     cterm=reverse
 hi WildMenu        guifg=#2e3436 guibg=#fce94f gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Conceal         guifg=#77ddff guibg=#2e3436 gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 
