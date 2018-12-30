@@ -44,15 +44,16 @@ hi Define		guifg=#eeeeec  " #define
 hi Macro		guifg=#eeeeec  " same as Define
 hi PreCondit	guifg=#eeeeec               gui=bold " #if, #else, #endif, section(tex)
 
-hi ExtraWhitespace             guibg=#bb0000                       ctermbg=red
+hi ExtraWhitespace            guibg=#bb0000                        ctermbg=red
+
+hi DiffAdd      guifg=none    guibg=#464632 gui=none    ctermfg=none ctermbg=238  cterm=none
+hi DiffChange   guifg=none    guibg=#335261 gui=none    ctermfg=none ctermbg=239  cterm=none
+hi DiffDelete   guifg=#f43753 guibg=#79313c gui=none    ctermfg=203  ctermbg=237  cterm=none
+hi DiffText     guifg=none    guibg=none    gui=reverse ctermfg=none ctermbg=none cterm=reverse
 
 "hi Underlined
 "hi Ignore
 "hi CursorIM
-"hi DiffAdd
-"hi DiffChange
-"hi DiffDelete
-"hi DiffText                   guibg=#a40000
 "hi VertSplit
 "hi IncSearch
 "hi ModeMsg
