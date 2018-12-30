@@ -8,12 +8,12 @@ let g:colors_name = "tango_lx"
 
 hi Cursor          guifg=#2e3436 guibg=#ffffff gui=bold    ctermfg=black      ctermbg=white cterm=bold
 hi CursorLine      guifg=NONE    guibg=#343f3f gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi CursorLineNr    guifg=#fce94f guibg=NONE    gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Directory       guifg=#7acccc guibg=NONE    gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi ErrorMsg        guifg=NONE    guibg=#a40000 gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi FoldColumn      guifg=#fce94f guibg=#2e3436 gui=NONE    ctermfg=3          ctermbg=NONE  cterm=NONE
 hi Folded          guifg=#eeeeec guibg=#555753 gui=NONE    ctermfg=black      ctermbg=gray  cterm=NONE
 hi LineNr          guifg=#fce94f guibg=NONE    gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
+hi CursorLineNr    guifg=#fce94f guibg=NONE    gui=bold    ctermfg=NONE       ctermbg=NONE  cterm=bold
 hi NonText         guifg=#3465a4 guibg=NONE    gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Normal          guifg=#f3f3ff guibg=#2e3436 gui=NONE    ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Search          guifg=#2e3436 guibg=#cc0000 gui=bold    ctermfg=black      ctermbg=red   cterm=NONE
