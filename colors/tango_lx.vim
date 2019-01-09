@@ -17,6 +17,7 @@ hi CursorLineNr    guifg=#fce94f guibg=NONE    gui=bold           ctermfg=NONE  
 hi NonText         guifg=#3465a4 guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Normal          guifg=#f3f3ff guibg=#2e3436 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi Search          guifg=#ff0000 guibg=NONE    gui=bold,underline ctermfg=red        ctermbg=NONE  cterm=bold,underline
+hi IncSearch       guifg=#2e3436 guibg=#ffff00 gui=bold,underline ctermfg=red        ctermbg=NONE  cterm=bold,underline
 hi SignColumn      guifg=NONE    guibg=#2e3436 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi SpecialKey      guifg=#7acccc guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
 hi StatusLine      guifg=#3465a4 guibg=#d3d7cf gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
