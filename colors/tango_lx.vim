@@ -48,9 +48,9 @@ hi PreCondit       guifg=#eeeeec guibg=NONE    gui=bold           ctermfg=NONE  
 hi ExtraWhitespace guifg=NONE    guibg=#bb0000 gui=NONE           ctermfg=NONE       ctermbg=red   cterm=NONE
 
 hi DiffAdd         guifg=NONE    guibg=#464632 gui=NONE           ctermfg=NONE       ctermbg=238  cterm=NONE
-hi DiffChange      guifg=NONE    guibg=#2c6a87 gui=NONE           ctermfg=NONE       ctermbg=239  cterm=NONE
 hi DiffDelete      guifg=#f43753 guibg=#79313c gui=NONE           ctermfg=203        ctermbg=237  cterm=NONE
-hi DiffText        guifg=NONE    guibg=#335261 gui=NONE           ctermfg=NONE       ctermbg=NONE cterm=NONE
+hi DiffChange      guifg=NONE    guibg=#335261 gui=NONE           ctermfg=NONE       ctermbg=NONE cterm=NONE
+hi DiffText        guifg=NONE    guibg=#2c6a87 gui=NONE           ctermfg=NONE       ctermbg=239  cterm=NONE
 
 "hi Underlined
 "hi Ignore
