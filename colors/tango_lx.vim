@@ -14,6 +14,7 @@ let s:gray         = '#2e3436'
 let s:darkgray     = '#343f3f'
 let s:yellow       = '#fce94f'
 let s:orange       = '#fcaf3e'
+let s:green        = '#83d8bd'
 let s:darkgreen    = '#464632'
 let s:lightgreen   = '#8ae234'
 let s:red          = '#a40000'
@@ -21,13 +22,12 @@ let s:magenta      = '#F92672'
 let s:darkred      = '#79313c'
 let s:lightmagenta = '#ad7fa8'
 let s:cyan         = '#66D9EF'
-let s:blue         = '#7acccc'
 let s:lightblue    = '#bbddff'
 let s:darkblue     = '#335b82'
 " brown
 " darkmagenta
 " darkcyan
-" green
+" blue
 " lightred
 " lightyellow
 " lightcyan
@@ -58,8 +58,8 @@ exe 'hi Visual          guifg='.s:none.       ' guibg='.s:none.      ' gui=rever
 exe 'hi Constant        guifg='.s:orange.     ' guibg='.s:none.      ' gui=NONE'
 exe 'hi Number          guifg='.s:orange.     ' guibg='.s:none.      ' gui=NONE'
 exe 'hi Statement       guifg='.s:yellow.     ' guibg='.s:none.      ' gui=bold'
-exe 'hi Identifier      guifg='.s:blue.       ' guibg='.s:none.      ' gui=NONE'
-exe 'hi PreProc         guifg='.s:blue.       ' guibg='.s:none.      ' gui=bold'
+exe 'hi Identifier      guifg='.s:green.      ' guibg='.s:none.      ' gui=NONE'
+exe 'hi PreProc         guifg='.s:cyan.       ' guibg='.s:none.      ' gui=bold'
 exe 'hi Comment         guifg='.s:lightblue.  ' guibg='.s:none.      ' gui=NONE'
 exe 'hi Type            guifg='.s:lightgreen. ' guibg='.s:none.      ' gui=bold'
 exe 'hi Special         guifg='.s:orange.     ' guibg='.s:none.      ' gui=NONE'
@@ -75,8 +75,8 @@ exe 'hi PreCondit       guifg='.s:white.      ' guibg='.s:none.      ' gui=bold'
 exe 'hi Title           guifg='.s:lightmagenta. ' guibg='.s:none.    ' gui=bold'
 exe 'hi Todo            guifg='.s:none.         ' guibg='.s:cyan.    ' gui=NONE'
 exe 'hi ErrorMsg        guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
-exe 'hi Directory       guifg='.s:blue.         ' guibg='.s:none.    ' gui=NONE'
-exe 'hi SpecialKey      guifg='.s:blue.         ' guibg='.s:none.    ' gui=NONE'
+exe 'hi Directory       guifg='.s:green.        ' guibg='.s:none.    ' gui=NONE'
+exe 'hi SpecialKey      guifg='.s:green.        ' guibg='.s:none.    ' gui=NONE'
 exe 'hi Conceal         guifg='.s:cyan.         ' guibg='.s:gray.    ' gui=NONE'
 exe 'hi ExtraWhitespace guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
 
