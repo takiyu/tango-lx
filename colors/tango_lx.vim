@@ -6,68 +6,103 @@ endif
 
 let g:colors_name = "tango_lx"
 
-hi Cursor          guifg=#2e3436 guibg=#ffffff gui=bold           ctermfg=black      ctermbg=white cterm=bold
-hi CursorLine      guifg=NONE    guibg=#343f3f gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Directory       guifg=#7acccc guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi ErrorMsg        guifg=NONE    guibg=#a40000 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi FoldColumn      guifg=#fce94f guibg=#2e3436 gui=NONE           ctermfg=3          ctermbg=NONE  cterm=NONE
-hi Folded          guifg=#eeeeec guibg=#555753 gui=NONE           ctermfg=black      ctermbg=gray  cterm=NONE
-hi LineNr          guifg=#fce94f guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi CursorLineNr    guifg=#fce94f guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=bold
-hi NonText         guifg=#3465a4 guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Normal          guifg=#f3f3ff guibg=#2e3436 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Search          guifg=#ff0000 guibg=NONE    gui=bold,underline ctermfg=red        ctermbg=NONE  cterm=bold,underline
-hi IncSearch       guifg=#2e3436 guibg=#ffff00 gui=bold,underline ctermfg=red        ctermbg=NONE  cterm=bold,underline
-hi SignColumn      guifg=NONE    guibg=#2e3436 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi SpecialKey      guifg=#7acccc guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi StatusLine      guifg=#3465a4 guibg=#d3d7cf gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Title           guifg=#ad7fa8 guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Visual          guifg=NONE    guibg=NONE    gui=reverse        ctermfg=NONE       ctermbg=0     cterm=reverse
-hi WildMenu        guifg=#2e3436 guibg=#fce94f gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Conceal         guifg=#77ddff guibg=#2e3436 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
+" Color pallet
+let s:none         = 'NONE'
+let s:white        = '#eeeeec'
+let s:lightgray    = '#888888'
+let s:gray         = '#2e3436'
+let s:darkgray     = '#343f3f'
+let s:yellow       = '#fce94f'
+let s:orange       = '#fcaf3e'
+let s:darkgreen    = '#464632'
+let s:lightgreen   = '#8ae234'
+let s:red          = '#a40000'
+let s:magenta      = '#F92672'
+let s:darkred      = '#79313c'
+let s:lightmagenta = '#ad7fa8'
+let s:cyan         = '#66D9EF'
+let s:blue         = '#7acccc'
+let s:lightblue    = '#bbddff'
+let s:darkblue     = '#335b82'
+" brown
+" darkmagenta
+" darkcyan
+" green
+" lightred
+" lightyellow
+" lightcyan
 
-hi Error           guifg=NONE    guibg=#F92672 gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Todo            guifg=NONE    guibg=#66D9EF gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi PMenu           guifg=#2e3436 guibg=#bbccdd gui=NONE           ctermfg=white      ctermbg=blue  cterm=NONE
-hi ColorColumn     guifg=NONE    guibg=#888888 gui=NONE           ctermfg=NONE       ctermbg=white cterm=NONE
+" Default Colors
+exe 'hi Cursor           guifg='.s:gray.      ' guibg='.s:white.     ' gui=bold'
+exe 'hi CursorLine       guifg='.s:none.      ' guibg='.s:darkgray.  ' gui=NONE'
+exe 'hi CursorLineNr     guifg='.s:yellow.    ' guibg='.s:none.      ' gui=bold'
+exe 'hi NonText          guifg='.s:darkblue.  ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Normal           guifg='.s:white.     ' guibg='.s:gray.      ' gui=NONE'
+exe 'hi LineNr           guifg='.s:yellow.    ' guibg='.s:none.      ' gui=NONE'
+exe 'hi PMenu            guifg='.s:gray.      ' guibg='.s:lightblue. ' gui=NONE'
+exe 'hi WildMenu         guifg='.s:gray.      ' guibg='.s:yellow.    ' gui=NONE'
+exe 'hi FoldColumn       guifg='.s:yellow.    ' guibg='.s:gray.      ' gui=NONE'
+exe 'hi SignColumn       guifg='.s:none.      ' guibg='.s:gray.      ' gui=NONE'
+exe 'hi ColorColumn      guifg='.s:none.      ' guibg='.s:lightgray. ' gui=NONE'
 
-hi Comment         guifg=#bbddff guibg=NONE    gui=NONE           ctermfg=blue       ctermbg=NONE  cterm=bold
-hi Constant        guifg=#fcaf3e guibg=NONE    gui=NONE           ctermfg=DarkYellow ctermbg=NONE  cterm=bold
-hi Special         guifg=#fcaf3e guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Identifier      guifg=#7acccc guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE
-hi Statement       guifg=#fce94f guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=bold
-hi PreProc         guifg=#88ffff guibg=NONE    gui=bold           ctermfg=cyan       ctermbg=NONE  cterm=bold
-hi Function        guifg=#eeeeec guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=bold
-hi Type            guifg=#8ae234 guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=bold
-hi Keyword         guifg=#8ae234 guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=bold
-hi Include         guifg=#eeeeec guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE " #include
-hi Define          guifg=#eeeeec guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE " #define
-hi Macro           guifg=#eeeeec guibg=NONE    gui=NONE           ctermfg=NONE       ctermbg=NONE  cterm=NONE " same as Define
-hi PreCondit       guifg=#eeeeec guibg=NONE    gui=bold           ctermfg=NONE       ctermbg=NONE  cterm=NONE " #if, #else, #endif, section(tex)
+" Search
+exe 'hi Search           guifg='.s:red.       ' guibg='.s:none.      ' gui=bold,underline'
+exe 'hi IncSearch        guifg='.s:gray.      ' guibg='.s:yellow.    ' gui=bold,underline'
 
-hi ExtraWhitespace guifg=NONE    guibg=#bb0000 gui=NONE           ctermfg=NONE       ctermbg=red   cterm=NONE
+" Window Elements
+exe 'hi Folded          guifg='.s:white.      ' guibg='.s:lightgray. ' gui=NONE'
+exe 'hi StatusLine      guifg='.s:darkblue.   ' guibg='.s:white.     ' gui=NONE'
+exe 'hi Visual          guifg='.s:none.       ' guibg='.s:none.      ' gui=reverse'
 
-hi DiffAdd         guifg=NONE    guibg=#464632 gui=NONE           ctermfg=NONE       ctermbg=238  cterm=NONE
-hi DiffDelete      guifg=#f43753 guibg=#79313c gui=NONE           ctermfg=203        ctermbg=237  cterm=NONE
-hi DiffChange      guifg=NONE    guibg=#335261 gui=NONE           ctermfg=NONE       ctermbg=NONE cterm=NONE
-hi DiffText        guifg=NONE    guibg=#2c6a87 gui=NONE           ctermfg=NONE       ctermbg=239  cterm=NONE
+" Syntax
+exe 'hi Constant        guifg='.s:orange.     ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Number          guifg='.s:orange.     ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Statement       guifg='.s:yellow.     ' guibg='.s:none.      ' gui=bold'
+exe 'hi Identifier      guifg='.s:blue.       ' guibg='.s:none.      ' gui=NONE'
+exe 'hi PreProc         guifg='.s:blue.       ' guibg='.s:none.      ' gui=bold'
+exe 'hi Comment         guifg='.s:lightblue.  ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Type            guifg='.s:lightgreen. ' guibg='.s:none.      ' gui=bold'
+exe 'hi Special         guifg='.s:orange.     ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Error           guifg='.s:none.       ' guibg='.s:magenta.   ' gui=NONE'
+exe 'hi Keyword         guifg='.s:lightgreen. ' guibg='.s:none.      ' gui=bold'
+exe 'hi Function        guifg='.s:white.      ' guibg='.s:none.      ' gui=bold'
+exe 'hi Include         guifg='.s:white.      ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Define          guifg='.s:white.      ' guibg='.s:none.      ' gui=NONE'
+exe 'hi Macro           guifg='.s:white.      ' guibg='.s:none.      ' gui=NONE'
+exe 'hi PreCondit       guifg='.s:white.      ' guibg='.s:none.      ' gui=bold'
 
-"hi Underlined
-"hi Ignore
-"hi CursorIM
-"hi VertSplit
-"hi IncSearch
-"hi ModeMsg
-"hi MoreMsg
-"hi Question
-"hi StatusLineNC gui=bold guibg=green guifg=black ctermfg = Blue
-"hi VisualNOS
-"hi WarningMsg
-"hi Menu
-"hi Scrollbar
-"hi Tooltip
+" Specials
+exe 'hi Title           guifg='.s:lightmagenta. ' guibg='.s:none.    ' gui=bold'
+exe 'hi Todo            guifg='.s:none.         ' guibg='.s:cyan.    ' gui=NONE'
+exe 'hi ErrorMsg        guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
+exe 'hi Directory       guifg='.s:blue.         ' guibg='.s:none.    ' gui=NONE'
+exe 'hi SpecialKey      guifg='.s:blue.         ' guibg='.s:none.    ' gui=NONE'
+exe 'hi Conceal         guifg='.s:cyan.         ' guibg='.s:gray.    ' gui=NONE'
+exe 'hi ExtraWhitespace guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
 
-hi GitGutterAdd          guifg=#8ae234 gui=bold gui=NONE ctermfg=green ctermbg=NONE cterm=bold
-hi GitGutterChange       guifg=#8ae234 gui=bold gui=NONE ctermfg=green ctermbg=NONE cterm=bold
-hi GitGutterDelete       guifg=#f92672 gui=bold gui=NONE ctermfg=red   ctermbg=NONE cterm=bold
-hi GitGutterChangeDelete guifg=#8ae234 gui=bold gui=NONE ctermfg=green ctermbg=NONE cterm=bold
+" Diff
+exe 'hi DiffAdd         guifg='.s:none.       ' guibg='.s:darkgreen. ' gui=NONE'
+exe 'hi DiffDelete      guifg='.s:magenta.    ' guibg='.s:darkred.   ' gui=NONE'
+exe 'hi DiffChange      guifg='.s:none.       ' guibg='.s:darkblue.  ' gui=NONE'
+exe 'hi DiffText        guifg='.s:none.       ' guibg='.s:darkblue.  ' gui=NONE'
+
+" GitGutter
+exe 'hi GitGutterAdd          guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+exe 'hi GitGutterChange       guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+exe 'hi GitGutterDelete       guifg='.s:magenta.    ' guibg='.s:none. ' gui=bold'
+exe 'hi GitGutterChangeDelete guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+
+" Non-defined elements
+" hi Underlined
+" hi Ignore
+" hi CursorIM
+" hi VertSplit
+" hi ModeMsg
+" hi MoreMsg
+" hi Question
+" hi StatusLineNC
+" hi VisualNOS
+" hi WarningMsg
+" hi Menu
+" hi Scrollbar
+" hi Tooltip
