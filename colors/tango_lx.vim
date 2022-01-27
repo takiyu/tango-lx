@@ -8,7 +8,7 @@ let g:colors_name = "tango_lx"
 
 " Color pallet
 let s:none         = 'NONE'
-let s:white        = '#eeeeec'
+let s:white        = '#eeeeee'
 let s:lightgray    = '#888888'
 let s:gray         = '#2e3436'
 let s:darkgray     = '#343f3f'
