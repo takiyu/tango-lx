@@ -41,7 +41,7 @@ exe 'hi NonText          guifg='.s:darkblue.  ' guibg='.s:none.      ' gui=NONE'
 exe 'hi Normal           guifg='.s:white.     ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi LineNr           guifg='.s:yellow.    ' guibg='.s:none.      ' gui=NONE'
 exe 'hi PMenu            guifg='.s:none.      ' guibg='.s:black.     ' gui=NONE'
-exe 'hi WildMenu         guifg='.s:darkgray.  ' guibg='.s:yellow.    ' gui=NONE'
+exe 'hi WildMenu         guifg='.s:none.      ' guibg='.s:black.     ' gui=NONE'
 exe 'hi FoldColumn       guifg='.s:yellow.    ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi SignColumn       guifg='.s:none.      ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi ColorColumn      guifg='.s:none.      ' guibg='.s:lightgray. ' gui=NONE'
@@ -93,7 +93,7 @@ exe 'hi GitGutterChange       guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold
 exe 'hi GitGutterDelete       guifg='.s:magenta.    ' guibg='.s:none. ' gui=bold'
 exe 'hi GitGutterChangeDelete guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
 
-" Nvim-LSP Diagnostic
+" Neovim-LSP Diagnostic
 exe 'hi DiagnosticError     guifg='.s:none. ' guibg='.s:magenta.    ' gui=NONE'
 exe 'hi DiagnosticWarn      guifg='.s:gray. ' guibg='.s:yellow.     ' gui=NONE'
 exe 'hi DiagnosticInfo      guifg='.s:gray. ' guibg='.s:lightgreen. ' gui=NONE'
