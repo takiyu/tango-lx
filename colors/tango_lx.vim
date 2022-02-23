@@ -10,8 +10,9 @@ let g:colors_name = "tango_lx"
 let s:none         = 'NONE'
 let s:white        = '#eeeeee'
 let s:lightgray    = '#888888'
-let s:gray         = '#2e3436'
-let s:darkgray     = '#343f3f'
+let s:gray         = '#343f3f'
+let s:darkgray     = '#2e3436'
+let s:black        = '#23282a'
 let s:yellow       = '#fce94f'
 let s:orange       = '#fcaf3e'
 let s:green        = '#83d8bd'
@@ -33,21 +34,21 @@ let s:darkblue     = '#335b82'
 " lightcyan
 
 " Default Colors
-exe 'hi Cursor           guifg='.s:gray.      ' guibg='.s:white.     ' gui=bold'
-exe 'hi CursorLine       guifg='.s:none.      ' guibg='.s:darkgray.  ' gui=NONE'
+exe 'hi Cursor           guifg='.s:darkgray.  ' guibg='.s:white.     ' gui=bold'
+exe 'hi CursorLine       guifg='.s:none.      ' guibg='.s:gray.      ' gui=NONE'
 exe 'hi CursorLineNr     guifg='.s:yellow.    ' guibg='.s:none.      ' gui=bold'
 exe 'hi NonText          guifg='.s:darkblue.  ' guibg='.s:none.      ' gui=NONE'
-exe 'hi Normal           guifg='.s:white.     ' guibg='.s:gray.      ' gui=NONE'
+exe 'hi Normal           guifg='.s:white.     ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi LineNr           guifg='.s:yellow.    ' guibg='.s:none.      ' gui=NONE'
-exe 'hi PMenu            guifg='.s:gray.      ' guibg='.s:lightblue. ' gui=NONE'
-exe 'hi WildMenu         guifg='.s:gray.      ' guibg='.s:yellow.    ' gui=NONE'
-exe 'hi FoldColumn       guifg='.s:yellow.    ' guibg='.s:gray.      ' gui=NONE'
-exe 'hi SignColumn       guifg='.s:none.      ' guibg='.s:gray.      ' gui=NONE'
+exe 'hi PMenu            guifg='.s:none.      ' guibg='.s:black.     ' gui=NONE'
+exe 'hi WildMenu         guifg='.s:darkgray.  ' guibg='.s:yellow.    ' gui=NONE'
+exe 'hi FoldColumn       guifg='.s:yellow.    ' guibg='.s:darkgray.  ' gui=NONE'
+exe 'hi SignColumn       guifg='.s:none.      ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi ColorColumn      guifg='.s:none.      ' guibg='.s:lightgray. ' gui=NONE'
 
 " Search
 exe 'hi Search           guifg='.s:red.       ' guibg='.s:none.      ' gui=bold,underline'
-exe 'hi IncSearch        guifg='.s:gray.      ' guibg='.s:yellow.    ' gui=bold,underline'
+exe 'hi IncSearch        guifg='.s:darkgray.  ' guibg='.s:yellow.    ' gui=bold,underline'
 
 " Window Elements
 exe 'hi Folded          guifg='.s:white.      ' guibg='.s:lightgray. ' gui=NONE'
@@ -77,7 +78,7 @@ exe 'hi Todo            guifg='.s:none.         ' guibg='.s:cyan.    ' gui=NONE'
 exe 'hi ErrorMsg        guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
 exe 'hi Directory       guifg='.s:green.        ' guibg='.s:none.    ' gui=NONE'
 exe 'hi SpecialKey      guifg='.s:green.        ' guibg='.s:none.    ' gui=NONE'
-exe 'hi Conceal         guifg='.s:cyan.         ' guibg='.s:gray.    ' gui=NONE'
+exe 'hi Conceal         guifg='.s:cyan.         ' guibg='.s:darkgray.' gui=NONE'
 exe 'hi ExtraWhitespace guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
 
 " Diff
@@ -91,6 +92,12 @@ exe 'hi GitGutterAdd          guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold
 exe 'hi GitGutterChange       guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
 exe 'hi GitGutterDelete       guifg='.s:magenta.    ' guibg='.s:none. ' gui=bold'
 exe 'hi GitGutterChangeDelete guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+
+" Nvim-LSP Diagnostic
+exe 'hi DiagnosticError     guifg='.s:none. ' guibg='.s:magenta.    ' gui=NONE'
+exe 'hi DiagnosticWarn      guifg='.s:gray. ' guibg='.s:yellow.     ' gui=NONE'
+exe 'hi DiagnosticInfo      guifg='.s:gray. ' guibg='.s:lightgreen. ' gui=NONE'
+exe 'hi DiagnosticHint      guifg='.s:gray. ' guibg='.s:lightgreen. ' gui=NONE'
 
 " Non-defined elements
 " hi Underlined
