@@ -98,6 +98,10 @@ exe 'hi DiagnosticError     guifg='.s:none. ' guibg='.s:magenta.    ' gui=NONE'
 exe 'hi DiagnosticWarn      guifg='.s:gray. ' guibg='.s:yellow.     ' gui=NONE'
 exe 'hi DiagnosticInfo      guifg='.s:gray. ' guibg='.s:lightgreen. ' gui=NONE'
 exe 'hi DiagnosticHint      guifg='.s:gray. ' guibg='.s:lightgreen. ' gui=NONE'
+exe 'hi DiagnosticUnderlineError  gui=underline guisp='.s:magenta
+exe 'hi DiagnosticUnderlineWarn   gui=underline guisp='.s:yellow
+exe 'hi DiagnosticUnderlineInfo   gui=underline guisp='.s:lightgreen
+exe 'hi DiagnosticUnderlineHint   gui=underline guisp='.s:lightgreen
 
 " Non-defined elements
 " hi Underlined
