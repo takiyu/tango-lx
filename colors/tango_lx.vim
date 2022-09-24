@@ -46,6 +46,10 @@ exe 'hi FoldColumn       guifg='.s:yellow.    ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi SignColumn       guifg='.s:none.      ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi ColorColumn      guifg='.s:none.      ' guibg='.s:lightgray. ' gui=NONE'
 
+" Float window
+exe 'hi NormalFloat      guifg='.s:white.     ' guibg='.s:darkgray.  ' gui=NONE'
+exe 'hi FloatBorder      guifg='.s:white.     ' guibg='.s:darkgray.  ' gui=NONE'
+
 " Search
 exe 'hi Search           guifg='.s:red.       ' guibg='.s:none.      ' gui=bold,underline'
 exe 'hi IncSearch        guifg='.s:darkgray.  ' guibg='.s:yellow.    ' gui=bold,underline'
