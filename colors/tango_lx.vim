@@ -107,6 +107,9 @@ exe 'hi DiagnosticUnderlineWarn   gui=underline guisp='.s:yellow
 exe 'hi DiagnosticUnderlineInfo   gui=underline guisp='.s:lightgreen
 exe 'hi DiagnosticUnderlineHint   gui=underline guisp='.s:lightgreen
 
+" Ghost text (manually used)
+exe 'hi GhostText        guifg='.s:lightgray.  ' guibg='.s:darkgray.  ' gui=NONE'
+
 " Non-defined elements
 " hi Underlined
 " hi Ignore
