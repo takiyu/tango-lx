@@ -24,11 +24,11 @@ let s:darkred      = '#79313c'
 let s:lightmagenta = '#ad7fa8'
 let s:cyan         = '#66D9EF'
 let s:lightblue    = '#bbddff'
+" let s:blue         = '#9494ff'
 let s:darkblue     = '#335b82'
 " brown
 " darkmagenta
 " darkcyan
-" blue
 " lightred
 " lightyellow
 " lightcyan
@@ -80,7 +80,7 @@ exe 'hi PreCondit       guifg='.s:white.      ' guibg='.s:none.      ' gui=bold'
 exe 'hi Title           guifg='.s:lightmagenta. ' guibg='.s:none.    ' gui=bold'
 exe 'hi Todo            guifg='.s:none.         ' guibg='.s:cyan.    ' gui=NONE'
 exe 'hi ErrorMsg        guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
-exe 'hi Directory       guifg='.s:green.        ' guibg='.s:none.    ' gui=NONE'
+exe 'hi Directory       guifg='.s:green.        ' guibg='.s:none.    ' gui=bold'
 exe 'hi SpecialKey      guifg='.s:green.        ' guibg='.s:none.    ' gui=NONE'
 exe 'hi Conceal         guifg='.s:cyan.         ' guibg='.s:darkgray.' gui=NONE'
 exe 'hi ExtraWhitespace guifg='.s:none.         ' guibg='.s:red.     ' gui=NONE'
@@ -91,12 +91,6 @@ exe 'hi DiffDelete      guifg='.s:magenta.    ' guibg='.s:darkred.   ' gui=NONE'
 exe 'hi DiffChange      guifg='.s:none.       ' guibg='.s:darkblue.  ' gui=NONE'
 exe 'hi DiffText        guifg='.s:none.       ' guibg='.s:darkblue.  ' gui=NONE'
 
-" GitGutter
-exe 'hi GitGutterAdd          guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
-exe 'hi GitGutterChange       guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
-exe 'hi GitGutterDelete       guifg='.s:magenta.    ' guibg='.s:none. ' gui=bold'
-exe 'hi GitGutterChangeDelete guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
-
 " Neovim-LSP Diagnostic
 exe 'hi DiagnosticError     guifg='.s:none. ' guibg='.s:magenta.    ' gui=NONE'
 exe 'hi DiagnosticWarn      guifg='.s:gray. ' guibg='.s:yellow.     ' gui=NONE'
@@ -106,6 +100,19 @@ exe 'hi DiagnosticUnderlineError  gui=underline guisp='.s:magenta
 exe 'hi DiagnosticUnderlineWarn   gui=underline guisp='.s:yellow
 exe 'hi DiagnosticUnderlineInfo   gui=underline guisp='.s:lightgreen
 exe 'hi DiagnosticUnderlineHint   gui=underline guisp='.s:lightgreen
+
+" GitGutter
+exe 'hi GitGutterAdd          guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+exe 'hi GitGutterChange       guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+exe 'hi GitGutterDelete       guifg='.s:magenta.    ' guibg='.s:none. ' gui=bold'
+exe 'hi GitGutterChangeDelete guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold'
+
+" Fern
+exe 'hi FernRootText     guifg='.s:lightgreen. ' guibg='.s:none.     ' gui=bold'
+exe 'hi FernBranchSymbol guifg='.s:green.      ' guibg='.s:none.     ' gui=bold'
+exe 'hi FernBranchText   guifg='.s:green.      ' guibg='.s:none.     ' gui=bold'
+exe 'hi FernLeafSymbol   guifg='.s:white.      ' guibg='.s:darkgray. ' gui=NONE'
+exe 'hi FernLeafText     guifg='.s:white.      ' guibg='.s:darkgray. ' gui=NONE'
 
 " Ghost text (manually used)
 exe 'hi GhostText        guifg='.s:lightgray.  ' guibg='.s:darkgray.  ' gui=NONE'
