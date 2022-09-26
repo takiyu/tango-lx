@@ -109,8 +109,8 @@ exe 'hi GitGutterChangeDelete guifg='.s:lightgreen. ' guibg='.s:none. ' gui=bold
 
 " Fern
 exe 'hi FernRootText     guifg='.s:lightgreen. ' guibg='.s:none.     ' gui=bold'
-exe 'hi FernBranchSymbol guifg='.s:green.      ' guibg='.s:none.     ' gui=bold'
-exe 'hi FernBranchText   guifg='.s:green.      ' guibg='.s:none.     ' gui=bold'
+exe 'hi FernBranchSymbol guifg='.s:blue.       ' guibg='.s:none.     ' gui=bold'
+exe 'hi FernBranchText   guifg='.s:lightblue.  ' guibg='.s:none.     ' gui=bold'
 exe 'hi FernLeafSymbol   guifg='.s:white.      ' guibg='.s:darkgray. ' gui=NONE'
 exe 'hi FernLeafText     guifg='.s:white.      ' guibg='.s:darkgray. ' gui=NONE'
 
