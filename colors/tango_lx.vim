@@ -11,8 +11,9 @@ let s:none         = 'NONE'
 let s:white        = '#eeeeee'
 let s:lightgray    = '#888888'
 let s:gray         = '#343f3f'
-let s:darkgray     = '#2e3436'
-let s:black        = '#23282a'
+let s:darkgray     = '#2d3336'
+let s:stronggray   = '#272c2f'
+let s:black        = '#22272a'
 let s:yellow       = '#fce94f'
 let s:orange       = '#fcaf3e'
 let s:green        = '#83d8bd'
@@ -47,7 +48,7 @@ exe 'hi SignColumn       guifg='.s:none.      ' guibg='.s:darkgray.  ' gui=NONE'
 exe 'hi ColorColumn      guifg='.s:none.      ' guibg='.s:lightgray. ' gui=NONE'
 
 " Float window
-exe 'hi NormalFloat      guifg='.s:white.     ' guibg='.s:darkgray.  ' gui=NONE'
+exe 'hi NormalFloat      guifg='.s:white.     ' guibg='.s:stronggray.' gui=NONE'
 exe 'hi FloatBorder      guifg='.s:white.     ' guibg='.s:darkgray.  ' gui=NONE'
 
 " Search
